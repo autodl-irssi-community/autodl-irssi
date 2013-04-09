@@ -33,7 +33,7 @@ use warnings;
 use Symbol;
 
 BEGIN {
-  # Delete all of our modules from the %INC hash so they can be reloaded.
+	# Delete all of our modules from the %INC hash so they can be reloaded.
 	sub deleteOurModules {
 		my @deleteThese;
 		while (my ($moduleName, $modulePathName) = each %INC) {
